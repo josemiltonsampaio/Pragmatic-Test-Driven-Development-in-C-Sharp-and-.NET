@@ -56,7 +56,7 @@ public class SlotsService : ISlotsService
             var potentialAppointmentStart = shift.Starting;
             var potentialAppointmentEnd = 
                 potentialAppointmentStart.AddMinutes(service.AppointmentTimeSpanInMin);
-            
+            //test
             for(int increment = 0;potentialAppointmentEnd <= shift.Ending;increment += _settings.RoundUpInMin)
             {
                 potentialAppointmentStart = shift.Starting.AddMinutes(increment);
